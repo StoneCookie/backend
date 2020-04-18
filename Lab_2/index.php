@@ -91,8 +91,8 @@
 					echo 'Табличная верстка.';
 				if ( $type == 'E' )
 					echo 'Блочная верстка.';
-								'</div>
-							</footer>'
+				echo '</div>
+							</footer>';
 	?>
 
 </body>
