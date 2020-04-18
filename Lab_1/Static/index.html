@@ -5,63 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<?
-		$title = 'Perezhogin FV 192-322, Lab_1 Конвертация статического контента в динамический';
-		echo '<title>'.$title.'</title>'
-	?>
+	<title>Perezhogin FV 192-322, Lab_1 Конвертация статического контента в динамический</title>
 </head>
 
 <body>
 	<header class="header">
 		<nav class="nav container">
-			<a <?
-				$name='Главная';
-				$link='#';
-				$current_page=true;
-				echo 'href="'.$link.'"';
-				echo ' class="nav__link';
-				if( $current_page )
-					echo ' active';
-				?>"><?
-						echo $name;
-					?>
-			</a>
-			<a <?
-				$name='Портфолио';
-				$link='portfolio.php';
-				$current_page=false;
-				echo 'href="'.$link.'"';
-				echo ' class="nav__link';
-				if( $current_page )
-					echo ' active';
-				?>"><?
-						echo $name;
-					?>
-			</a>
-			<a <?
-				$name='Информация';
-				$link='info.php';
-				$current_page=false;
-				echo 'href="'.$link.'"';
-				echo ' class="nav__link';
-				if( $current_page )
-					echo ' active';
-				?>"><?
-						echo $name;
-					?>
-			</a>
-			<a <?
-				$name='Статическая версия сайта';
-				$link='Static/index.html#general';
-				$current_page=false;
-				echo 'href="'.$link.'"';
-				echo ' class="nav__link';
-				if( $current_page )
-					echo ' active';
-				?>"><?
-						echo $name;
-					?>
-			</a>
+			<a class="nav__link" id="general" href="#general">Главная</a>
+			<a class="nav__link" id="portfolio" href="portfolio.html#portfolio">Портфолио</a>
+			<a class="nav__link" id="info" href="info.html#info">Информация</a>
+			<a class="nav__link" href="../index.php">Динамическая версия</a>
 		</nav>
 	</header>
 	<main class="content">
@@ -95,52 +48,46 @@
 				фундаментальная ошибка атрибуции, которая прослеживается во многих экспериментах. Когнитивная составляющая,
 				иcходя из того, что релевантно выбирает архетип. Мышление интегрирует страх.</p>
 			<div class="content__wrap-img img_main">
-				<?
-				if( date('s') % 2 === 0 )
-					echo '<img src="img/lemon.jpg" alt="Лимон">';
-				else
-					echo '<img src="img/raspberry.jpg" alt="Малина">';
-				?>
+				<img src="img/lemon.jpg" alt="Лимон">
+				<img src="img/raspberry.jpg" alt="Малина">
 			</div>
 			<div class="content__wrap-table">
 				<table>
-					<?
-					echo'<tr>
+					<tr>
 						<th>№</th>
 						<th>Сериалы</th>
 						<th>Фильмы</th>
 						<th>Игры</th>
-					</tr>';
-					?>
-					<tr>
-						<th><? echo '1.' ?></th>
-						<td><? echo 'Во все тяжкие' ?></td>
-						<td><? echo 'Побег из шоушенка' ?></td>
-						<td><? echo 'Red Dead Redemption 2' ?></td>
 					</tr>
 					<tr>
-						<th><? echo '2.' ?></th>
-						<td><? echo 'Чернобыль' ?></td>
-						<td><? echo 'Зеленая миля' ?></td>
-						<td><? echo 'God of War' ?></td>
+						<th>1.</th>
+						<td>Во все тяжкие</td>
+						<td>Побег из шоушенка</td>
+						<td>Red Dead Redemption 2</td>
 					</tr>
 					<tr>
-						<th><? echo '3.' ?></th>
-						<td><? echo 'Друзья' ?></td>
-						<td><? echo 'Бойцовский клуб' ?></td>
-						<td><? echo 'Resident Evil 2 Remake' ?></td>
+						<th>2.</th>
+						<td>Чернобыль</td>
+						<td>Зеленая миля</td>
+						<td>God of War</td>
 					</tr>
 					<tr>
-						<th><? echo '4.' ?></th>
-						<td><? echo 'Игра престолов' ?></td>
-						<td><? echo 'Престиж' ?></td>
-						<td><? echo 'Divinity: Original Sin 2' ?></td>
+						<th>3.</th>
+						<td>Друзья</td>
+						<td>Бойцовский клуб</td>
+						<td>Resident Evil 2 Remake</td>
 					</tr>
 					<tr>
-						<th><? echo '5.' ?></th>
-						<td><? echo 'Шерлок' ?></td>
-						<td><? echo 'Матрица' ?></td>
-						<td><? echo 'Borderlands 3' ?></td>
+						<th>4.</th>
+						<td>Игра престолов</td>
+						<td>Престиж</td>
+						<td>Divinity: Original Sin 2</td>
+					</tr>
+					<tr>
+						<th>5.</th>
+						<td>Шерлок</td>
+						<td>Матрица</td>
+						<td>Borderlands 3</td>
 					</tr>
 				</table>
 			</div>
@@ -148,12 +95,8 @@
 	</main>
 	<footer class="footer">
 		<div class="container footer__text">
-			<p>
-				<?
-					echo 'Сформировано '.date('d.m.Y в H-i:s');
-				?>
-			</p>
-			<p>Московский политех ©</p>
+			<p>Основы серверной веб-разработки</p>
+			<p>Московский политех 2020 ©</p>
 		</div>
 	</footer>
 </body>
