@@ -47,7 +47,9 @@ a {
 	text-decoration: underline;
 }
 
-.active {
+#general:target,
+#portfolio:target,
+#info:target {
 	background: #34C45A;
 }
 
