@@ -35,6 +35,10 @@ body, html {
 	text-decoration: none;
 }
 
+.nav__link:last-child {
+	margin-left: auto;
+}
+
 .nav__link:hover {
 	text-decoration: underline;
 }
