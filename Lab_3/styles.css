@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header,
+footer {
+	background: #37375a;
+	color: #fff;
+}
+
+.header__wrap {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.logo {
+	width: 250px;
+}
+
+main {
+	height: 100%;
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+	padding: 20px 0;
+	background: #e9e9e9;
+	display: flex;
+}
+
+main .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.wrap__key {
+	max-width: 405px;
+	min-width: 150px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.results {
+	width: calc(100% - 10px);
+	height: 40px;
+	border: 2px solid;
+	background: #f7f7f7;
+	color: #000;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap__num {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.wrap__num a {
+	width: 70px;
+	height: 70px;
+	margin: 5px;
+	background: #ccc;
+	border-radius: 10px;
+	color: #000;
+	border: 2px solid;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reset {
+	height: 70px;
+	width: calc(100% - 10px);
+	background: #ccc;
+	border-radius: 10px;
+	color: #000;
+	border: 2px solid #000;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap__num a:hover,
+.reset:hover {
+	background: green;
+	color: #fff;
+	border: 2px solid #000;
+}
+
+footer .container {
+	font-size: 1.5rem;
+	height: 100%;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
