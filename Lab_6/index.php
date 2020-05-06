@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<title>PerezhoginFV 191-322 Лабораторная работа 2</title>
+	<title>PerezhoginFV 191-322 Лабораторная работа 6</title>
 </head>
 
 <body style="<? if ($_POST['cange'] == 'print') echo 'background: #fff; border: solid #000; width: calc(100% - 50px); height: calc(100% - 50px); margin-top: 25px'?>">

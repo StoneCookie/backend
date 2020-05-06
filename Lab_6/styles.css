@@ -187,6 +187,7 @@ input[type="submit"]:hover,
 }
 
 .wrap-inputs {
+	min-width: 245.76px;
 	display: inline-flex;
 	flex-direction: column;
 }
@@ -284,4 +285,13 @@ input[type="submit"]:hover,
 .browser-report__failed,
 .browser-report__passed {
 	margin-top: 30px;
+}
+
+@media (max-width: 595px) {
+	.wrap-inputs {
+		display: flex;
+	}
+	.wrap-inputs:last-child {
+		margin-left: 0;
+	}
 }
