@@ -23,9 +23,9 @@
 				print ('<form action="#" method="POST">
 					<fieldset class="test">
 					<legend>Введите ваши данные</legend>');
-						echo '<label><span>Номер группы<span style="color: red;"> *</span></span>
+						echo '<label><span>Номер группы<span style="color: red; margin-right: 0"> *</span></span>
 						<input required type="text" name="group" placeholder="Введите номер группы" value="'.$_GET['G'].'"></label>';
-					echo '<label><span>ФИО<span style="color: red;"> *</span></span>';
+					echo '<label><span>ФИО<span style="color: red; margin-right: 0"> *</span></span>';
 						echo '<input required type="text" name="fio" placeholder="Введите ФИО" value="'.$_GET['F'].'"></label>';
 					print ('
 					<label><span>Информация о себе</span>
@@ -44,7 +44,7 @@
 					</label>
 				</fieldset>
 				<fieldset class="row">
-					<legend>Выберите задачу<span style="color: red;"> *</span></legend>
+					<legend>Выберите задачу<span style="color: red; margin-right: 0"> *</span></legend>
 					<div class="wrap-inputs">
 						<label>Площадь треугольника
 							<input required type="radio" name="task" value="s-triangle">
@@ -82,7 +82,7 @@
 					</label>
 				</fieldset>
 				<fieldset class="clear">
-					<legend>Выберите как предоставить отчет<span style="color: red;"> *</span></legend>
+					<legend>Выберите как предоставить отчет<span style="color: red; margin-right: 0"> *</span></legend>
 					<label><span>Версия для просмотра в браузере</span>
 						<input required type="radio" name="cange" value="browser">
 					</label>
@@ -91,7 +91,7 @@
 					</label>
 				</fieldset>
 				<input type="submit" name="submit" value="Проверить">
-				<div style="font-size: .9rem; margin-top: 20px"><span style="color: red; font-size: 1.2rem;">"*"</span><span> — обязательные для заполнения поля.</span></div>
+				<div style="font-size: .9rem; margin-top: 20px"><span style="color: red; margin-right: 0 font-size: 1.2rem;">"*"</span><span> — обязательные для заполнения поля.</span></div>
 			</form>');
 			}
 				if (isset($_POST['A'])) {

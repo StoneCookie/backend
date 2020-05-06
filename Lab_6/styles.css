@@ -182,11 +182,12 @@ input[type="submit"]:hover,
 }
 
 .row {
+	display: inline;
 	flex-direction: row;
 }
 
 .wrap-inputs {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 }
 
